@@ -1,0 +1,318 @@
+@font-face {
+    font-family:"AstaghfirullohDemoRegular";
+    src: url(Fonts/AstaghfirullohDemoRegular.ttf);
+}
+
+@font-face {
+    font-family:"Sevarothz";
+    src: url(Fonts/Sevarothz.ttf);
+}
+
+/* Pang lahat */
+*{
+    top: 0%;
+    right: 0%;
+    margin:0%;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    perspective: 1px;
+    transform-style: preserve-3d;
+    background-color: rgb(0, 0, 0);
+}
+
+
+/*----------------------------- Navbar sa may pinaka taas. */
+header, .navbar {
+    text-shadow: 2px 2px 3px #ff0000;
+    display: flex;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+    position: sticky;
+    z-index: 999999;
+    justify-content: center;
+}
+
+/*------------------------------ PunetZuu logo */
+
+.logo h1 {
+    position: relative;
+    left: 0px;
+    font-size: 60px;
+    padding: 0px 0px 8px 0px;  
+    color: black;
+    font-family: Sevarothz;
+    transition-duration: 0.5s;
+}
+
+
+.navbar h1:hover {
+    color: #f6f6f6;
+    text-shadow: 2px 2px 3px #c70606;
+    transform: translate(0, 10px);
+    filter: drop-shadow(0 0 5px rgb(213, 53, 8));
+}
+
+.nav-links {
+    text-align: center;
+    align-items: center;  
+    transition-duration: 0.5s;
+    position: relative;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.nav-links:hover {
+    filter: drop-shadow(0 0 5px rgb(213, 53, 8));
+    transform: translate(0, 10px);
+}
+
+.nav-links a {
+    color: rgb(255, 168, 68);
+    font-family: Sevarothz;
+    font-size: 35px;
+}
+
+.nav-links a:hover {   
+    color: #f6f6f6;
+    text-shadow: 2px 2px 3px #ff6200;
+}
+
+.nav-links a img {
+    height: 45px;
+    width: 45px;
+    border-radius: 5px;
+}
+
+/*----------------------------------- Landing page. ---------------------------------*/
+/*------------------------ Sett landing page video ---------------------------------*/
+.background-clips {
+    position: relative;
+    top: 0px;
+    left: 10%;
+    height: 45vh;
+    width: 80%;
+    object-fit:cover;
+    background-attachment: fixed;
+    z-index: -2;
+    
+}
+
+/* ----------------------------- ABOUT SECTION ---------------------------- */
+
+.about-section{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    max-width: 100%;
+    max-height: 35vh;
+    position: relative;
+    gap: 1rem;
+}
+/*---------------------- Resume Pic -------------------*/
+#resumePic {
+    max-height: 250px;
+    max-width: 200px;
+    border: 4px solid rgb(255, 123, 0);
+    border-radius: 15px;    
+}
+#resumePic:hover{
+}
+    
+/*------------------------------ Div ----------------- */
+.aboutText{
+    cursor: default;
+    width: 70vh;
+}
+
+
+/* ------------- 2nd Div aboutText ------------  */
+#jt{
+    max-width: 600px;
+    font-size: 90px;
+    animation: animate 3s linear infinite;
+    animation-delay: 5s;    
+}
+#location {
+    max-width: 600px;
+    font-size: 40px;
+    animation: animate 3s linear infinite;
+    animation-delay: 3s;
+}
+#ncst {
+    padding-top: 10px;
+    font-size: 25px;
+    max-width: 500px;
+    animation: animate 3s linear infinite;
+    animation-delay: 1s;
+}
+@keyframes animate{
+    0% {
+        color: rgb(255, 255, 255);
+        text-shadow: 2px 1px 5px rgb(213, 53, 8);
+        filter: drop-shadow(0 0 7px rgb(163, 101, 8));
+    }; 
+}
+
+/* -------- PHONE NUMBER KO -------- */
+#phoneNo{
+    font-size: 30px;
+    padding-left: 15px;
+}
+/*------------------ Hyper link ng resume */
+ #resume {
+    color: rgb(255, 168, 68);
+    font-size: 23px;
+    text-decoration: none;
+    border: 2px solid rgb(163, 101, 8);
+    padding: 12px 25px;
+    border-radius: 20px;
+    transition: 0.3s;
+    z-index: 10;
+    max-width: 500px;
+    text-align: center;
+    font-family: Sevarothz;
+}
+ #resume:hover {
+    background-color:black;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    filter: drop-shadow(0 0 10px rgb(124, 5, 5));
+    transform: scale(1.1);
+}
+
+
+.aboutTextDesign {
+    color: rgb(0, 0, 0);
+    width: 100%;
+    text-shadow: 2px 1px 5px rgb(255, 191, 95);
+    font-family: Sevarothz;
+    filter: drop-shadow(0 0 7px rgb(125, 0, 0));
+    transition: ease-in-out;
+    transition-duration: 0.2s ;
+}
+ .aboutTextDesign:hover {
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 1px 5px rgb(213, 53, 8);
+    filter: drop-shadow(0 0 7px rgb(163, 101, 8));
+}
+    /* visibility: visible; opacity: 0; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 60, 0, 1); transition: all, opacity 1s cubic-bezier(0.5, 0, 0, 1), transform 1s cubic-bezier(0.5, 0, 0, 1);  */
+
+
+.content {
+    text-align: center;
+    z-index: 1;
+}
+
+
+
+
+.knowme {
+    color: white;
+    font-size: 45px;
+    text-shadow: 2px 2px black;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.knowme:hover {
+    color: rgb(255, 168, 68);
+    filter: drop-shadow(0 0 10px rgb(124, 5, 5));
+}
+
+/* ------------------ Patawad Amanai ----------------- */
+
+#patawad {
+    height: 300px;
+    border-radius: 50px;
+    transition: 0.5s;
+    background-color: black;
+    z-index: -2;
+    border: 2px black solid;
+    transition-duration: 1s;
+}
+
+#patawad:hover {
+    border-radius: 40px;
+    filter: drop-shadow(0 0 20px rgb(124, 5, 5));
+    transform: scale(1.25);
+    border:none;
+}
+
+/* JEROSS TAPIADOR ---------------------------- */
+
+.intro {
+    position: relative;
+    top: 0%;
+    left: 0%;
+   font-family: Copperplate, Papyrus, fantasy;
+   justify-content: center;
+   align-items: center;
+   background-color: black;
+}
+
+.intro p {
+    color: rgb(0, 0, 0);
+    font-size: 45px;
+    width: 80%;
+    text-align: justify;
+}
+
+
+/* ----------------------------- PROJECTS SECTION --------------------------------- */
+#projects h2{
+    color: #f6f6f6;
+}
+
+
+
+
+
+/*--------------------------- Footer ---------------------- */
+
+.contacts {
+    bottom: 0;
+    font-family:Copperplate, Papyrus, fantasy;
+    text-shadow: 2px 2px 3px #ff0000;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    text-align: center; 
+}
+
+.social-media {
+    align-items: center;
+}
+
+.social-media li a {
+    color: rgb(255, 168, 68);
+    font-family: Copperplate, Papyrus, fantasy;
+    font-size: 30px;
+    top: 0%;
+    left: 0%;
+    transition: 0.2s ease-in-out;
+    transition-duration: 0.7s;
+}
+
+
+.social-media li {
+    display: inline-block;
+    margin: 0 15px;
+    text-align: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.contacts p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 30px;
+    top: 0;
+    left: 0;
+
+}
