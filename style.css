@@ -255,7 +255,6 @@ header, .navbar {
     column-gap: 1rem;
     justify-content: end;
     align-items: end;
-    
 }
 
 #skills-class h3{
@@ -376,6 +375,7 @@ header, .navbar {
     box-sizing: border-box;
   }
 
+
   form button {
     background-color: #7a0c0c;
     color: rgb(255, 255, 255);
@@ -386,6 +386,9 @@ header, .navbar {
     font-size: 16px;
     transition-duration: 0.5s;
     font-family: AstaghfirullohDemoRegular;
+    justify-self: center;
+    width: 170px;
+    margin: 0 88px 0;
   }
 
   form button:hover {
@@ -477,13 +480,20 @@ header, .navbar {
         justify-content: center;
     }
 
+    #shades{
+        margin: 0 140px 10px ;
+    }
+
     .aboutText{
         max-width: 480px;
     }
 
-    #shades{
-        margin-left:150px ;
+    
+
+    .aboutTextDesign{
+        text-align: center;
     }
+
 
     #jt{
         max-width: 480px;
@@ -499,29 +509,57 @@ header, .navbar {
     max-width: 480px;
     }
 
-    #resume{
-/* sssssssssssssssssssssssssssssssss */
+    #about a{
+        display: inherit;
     }
+
+    #phoneNo{
+        padding: 10px 0 10px;
+    }
+
+    #resume{
+        display: inherit;
+        justify-self: center;
+        padding: 10px;
+        width: 400px;
+    }
+
 /*-------------------------- Skills Section ------------*/
     #skills.skills{
         display: inherit;
         grid-template-rows: 480px;
-        margin-top: 200px;
+        margin-top: 270px;
+    }
+
+    #skills-div{
+        margin:10px auto 10px ;
     }
 
     #skills-div h1{
         font-size: 60px;
     }
 
+    #skills-div h2{
+        margin:10px auto 10px ;
+    }
+
     #patawad{
         height: 210px;
         width: 360px;
+        margin:0 60px 20px;
     }
 
     #skills-class{
         display: inherit;
-        grid-template-rows:auto;
+        width: 350px;
+        margin: 0 65px 0;
+        gap: 0.5em;
     }
+
+    #posters{
+        justify-content: center;
+    }
+
 
 /*--------------------footer----------------  */
 #contacts{
@@ -539,7 +577,7 @@ header, .navbar {
 
 .contacts-left > img{
     border-radius: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     width: 450px;
 }
 
@@ -548,15 +586,20 @@ header, .navbar {
    letter-spacing: 4px;
    font-size: 20px;
    text-align: center;
-   padding: 20px 0 20px;
+   padding: 5px 0 10px;
 }
 
 .contact-container{
     justify-self: center;
+    padding: 25px;
 }
 
 .knowme{
     font-size: 40px;
+}
+
+.reserved{
+    font-size: 15px;
 }
 
 }
