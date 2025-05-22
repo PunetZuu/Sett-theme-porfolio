@@ -477,17 +477,22 @@ header, .navbar {
         justify-content: center;
     }
 
+    .aboutText{
+        max-width: 480px;
+    }
+
     #shades{
         margin-left:150px ;
     }
 
     #jt{
+        max-width: 480px;
         font-size: 60px;
-        margin-left: 40px;
     }
 
     #location{
         font-size: 30px;
+        max-width:480px ;
     }
 
     #ncst{
@@ -499,9 +504,9 @@ header, .navbar {
     }
 /*-------------------------- Skills Section ------------*/
     #skills.skills{
-        display: grid;
-        grid-template-rows: 1frx;
-        margin-top: 500px;
+        display: inherit;
+        grid-template-rows: 480px;
+        margin-top: 200px;
     }
 
     #skills-div h1{
@@ -514,14 +519,22 @@ header, .navbar {
     }
 
     #skills-class{
-        display: grid;
+        display: inherit;
         grid-template-rows:auto;
     }
 
 /*--------------------footer----------------  */
 #contacts{
+    width: 480px;
     padding: 10px;
-    grid-template-rows: auto;
+    display: inherit;
+    grid-template-rows: 480px;
+}
+
+.contacts-left {
+    width: 450px;
+    margin: 0;
+    padding: 0;
 }
 
 .contacts-left > img{
@@ -530,13 +543,20 @@ header, .navbar {
     width: 450px;
 }
 
-.contacts-left > p{
+.contacts-left  p{
    width: 450px;
-   color: #f6f6f6;
-   font-family: sevarothz;
    letter-spacing: 4px;
-   font-size: 30px;
+   font-size: 20px;
    text-align: center;
+   padding: 20px 0 20px;
+}
+
+.contact-container{
+    justify-self: center;
+}
+
+.knowme{
+    font-size: 40px;
 }
 
 }
