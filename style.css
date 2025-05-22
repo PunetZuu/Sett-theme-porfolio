@@ -116,16 +116,17 @@ header, .navbar {
 }
 /*---------------------- Resume Pic -------------------*/
 #shades {
-    max-height: 250px;
-    max-width: 200px;
+    height: 250px;
+    width: 200px;
     border: 2px solid rgb(255, 255, 255);
     border-radius: 15px;
     transition-timing-function: ease-in-out;
-    transition-duration: 0.5s;    
+    transition-duration: 0.5s;   
 }
 
 #shades:hover {
     box-shadow: inset 0px 0px 20px 5px rgb(163, 101, 8);
+    content: url(Pictures/resume\ -\ Edited.png);
 }
     
 /*------------------------------ Div ----------------- */
@@ -176,7 +177,7 @@ header, .navbar {
     padding: 12px 25px;
     border-radius: 20px;
     transition: 0.3s;
-    z-index: 10;
+    z-index: 999999;
     max-width: 500px;
     text-align: center;
     font-family: Sevarothz;
@@ -217,7 +218,7 @@ header, .navbar {
 
 .skills {
    font-family: Copperplate, Papyrus, fantasy;
-   background-color: rgb(0, 0, 0);
+   background-color: transparent;
     display: grid;
     grid-template-columns: 400px 360px;
     width: 100%;
@@ -437,8 +438,105 @@ header, .navbar {
 }
 
 
-  @media (max-width: 600px) {
-    .contact-container {
-      padding: 20px;
+
+/*----------------------- Media Querry -----------------------*/
+
+@media (max-width: 480px){
+    header, .navbar{
+        max-width: 480px;
+        width: auto;
     }
-  }
+
+    .logo h1{
+        font-size: 35px;
+        padding-right: 10px;
+    }
+
+    .nav-links{
+        padding: 10px 5px 0;
+    }
+
+    .nav-links a{
+        font-size: 25px;
+    }
+
+    .nav-links a img{
+        height: 25px;
+        width: 25px;
+    }
+
+    .background-clips{
+        height: 20vh;
+        width: 480px;
+        left: 0%;
+    }
+
+    .about-section{
+        display: inherit;
+        grid-template-rows: 480px;
+        justify-content: center;
+    }
+
+    #shades{
+        margin-left:150px ;
+    }
+
+    #jt{
+        font-size: 60px;
+        margin-left: 40px;
+    }
+
+    #location{
+        font-size: 30px;
+    }
+
+    #ncst{
+    max-width: 480px;
+    }
+
+    #resume{
+/* sssssssssssssssssssssssssssssssss */
+    }
+/*-------------------------- Skills Section ------------*/
+    #skills.skills{
+        display: grid;
+        grid-template-rows: 1frx;
+        margin-top: 500px;
+    }
+
+    #skills-div h1{
+        font-size: 60px;
+    }
+
+    #patawad{
+        height: 210px;
+        width: 360px;
+    }
+
+    #skills-class{
+        display: grid;
+        grid-template-rows:auto;
+    }
+
+/*--------------------footer----------------  */
+#contacts{
+    padding: 10px;
+    grid-template-rows: auto;
+}
+
+.contacts-left > img{
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 450px;
+}
+
+.contacts-left > p{
+   width: 450px;
+   color: #f6f6f6;
+   font-family: sevarothz;
+   letter-spacing: 4px;
+   font-size: 30px;
+   text-align: center;
+}
+
+}
